@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='bootstrap5/css/bootstrap.min.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Result</h1>
+      <div class="card">
+        <div class="card-body">
+          <p class="lead">Your BMI is: {{ bmi }}</p>
+          <p class="lead">You are {{ result }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS files -->
+    <script src="{{ url_for('static', filename='bootstrap5/js/bootstrap.bundle.min.js') }}"></script>
+  </body>
+</html>
